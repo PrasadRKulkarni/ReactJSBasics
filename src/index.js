@@ -1,17 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App.jsx';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <React.Fragment>
+    <h1> Hello React JS </h1>
+    <App/> 
+  </React.Fragment>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//Sugar Sntax for React Fragment is <> </>
+
+// ReactDOM.render(
+//   <div>
+//     <h1> Hello World !!! </h1>
+//     <p> Please like & share my channel </p>
+//     <p> Please subscribe to my channel </p>
+//   </div>,
+//   document.getElementById('root')
+// );
+
+// ReactDOM.render(
+//   [
+//     <h1> Hello World !!! </h1>,
+//     <p> Please subscribe to my channel </p>
+//   ],
+//   document.getElementById('root')
+// );
+
+
