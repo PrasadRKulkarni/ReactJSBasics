@@ -15,6 +15,11 @@ import NPMClock from './NPMClock.jsx';
 import CompA from './UseContextPassData1';
 import UseEffectDemo from './UseEffectDemo.jsx';
 import CallAPICovid from './APICovid';
+//For Routing
+import {Route, Switch} from 'react-router-dom';
+import  AboutUs  from './AboutUs.jsx';
+import  ContactUs  from './ContactUs.jsx';
+import  Menubar  from './Menu.jsx';
 
 function App() {
     return (
@@ -61,8 +66,18 @@ function App() {
             <h2>Use Effect Demo</h2>
             <UseEffectDemo />
 
-            <h1>Call API</h1>
-            <CallAPICovid />
+            {/* <h1>Call API</h1>
+            <CallAPICovid /> */}
+
+            <h1>React Routing Example</h1>
+            <h3>npm i react-router-dom</h3>
+            <Menubar />
+            <Switch>
+                <Route exact path ='/' component={AboutUs} />
+                <Route path ='/contact' component={ContactUs} />
+            </Switch>
+           
+
 
 
         </React.Fragment>

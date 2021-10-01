@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.jsx';
+//For Routing in React 
+import {BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
   <React.Fragment>
-    <h1> Hello React JS </h1>
-    <App/> 
+    {/* For Routing it is embedded */}
+    <BrowserRouter> 
+      <App/> 
+    </BrowserRouter>
   </React.Fragment>,
   document.getElementById('root')
 );
